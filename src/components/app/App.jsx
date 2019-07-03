@@ -5,8 +5,8 @@ import './App.css';
 export default class App extends Component {
   state = {
     rows: 4,
-    cols: 9,
-    boxSize: 40
+    cols: 4,
+    boxSize: 50
   };
   render() {
     const { rows, cols, boxSize } = this.state;
@@ -16,8 +16,8 @@ export default class App extends Component {
     };
 
     let boxes = [];
-    let top = 2;
-    let left = 2;
+    let top = 0;
+    let left = 0;
     for (let i = 0; i < rows; i++) {
       for (let j = 0; j < cols; j++) {
         top = boxSize * i + 2 * i + 2;
