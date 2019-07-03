@@ -61,7 +61,7 @@ export default class App extends Component {
             top={top}
             left={left}
             setCoords={this.setCoords}
-          >{`${i}${j}`}</Box>
+          />
         );
       }
     }
