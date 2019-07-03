@@ -1,0 +1,65 @@
+.app {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  border: 2px solid #4dabe4;
+  position: relative;
+}
+
+.row {
+  height: 102px;
+  border: none;
+}
+
+.absBox {
+  position: absolute;
+  background-color: #4dabe4;
+  top: 2px;
+  left: 2px;
+  transition: 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.absBox2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #4dabe4;
+  top: 2px;
+  left: 54px;
+}
+.absBox3 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #4dabe4;
+  top: 2px;
+  left: 106px;
+}
+.absBox1:hover {
+  background-color: rgb(102, 56, 189);
+}
+.absBox4 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #4dabe4;
+  top: 2px;
+  left: 158px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: #4dabe4;
+  margin: 1px 0 1px 1px;
+  display: inline-block;
+}
+.box:last-child {
+  margin: 1px;
+}
