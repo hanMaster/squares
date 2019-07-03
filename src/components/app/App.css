@@ -27,22 +27,36 @@
 }
 
 .btn {
-  background-color: crimson;
   position: absolute;
   border: none;
-  width: 50px;
-  height: 50px;
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 20px;
   color: #ffffff;
+  outline: none;
+  transition: 1s ease;
 }
 
 .btn_add_col {
-  top: 0;
-  right: -54px;
+  background-color: #f1a417;
+  top: 2px;
+}
+.btn_del_col {
+  background-color: #b00100;
+  /* top: -52px; */
+}
+.btn_del_row {
+  background-color: #b00100;
+  /* left: -52px; */
+}
+.btn_add_col:hover,
+.btn_add_row:hover {
+  background-color: #f5bf5c;
+}
+.btn_del_col:hover,
+.btn_del_row:hover {
+  background-color: #c84d4c;
 }
 
 .btn_add_row {
-  bottom: -54px;
-  left: 0;
+  background-color: #f1a417;
+  left: 2px;
 }
