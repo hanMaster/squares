@@ -8,6 +8,14 @@ export default class App extends Component {
     cols: 4,
     boxSize: 50
   };
+  addRow = () => {
+    this.setState({ rows: this.state.rows + 1 });
+  };
+
+  addCol = () => {
+    this.setState({ cols: this.state.cols + 1 });
+  };
+
   render() {
     const { rows, cols, boxSize } = this.state;
     const containerWidth = {
@@ -38,6 +46,13 @@ export default class App extends Component {
     return (
       <div className="app">
         <div className="container" style={containerWidth}>
+          <button className="btn btn_add_row" onClick={this.addRow}>
+            +
+          </button>
+          <button className="btn btn_add_col" onClick={this.addCol}>
+            +
+          </button>
+
           {boxes}
         </div>
       </div>
